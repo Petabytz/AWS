@@ -34,7 +34,8 @@ $ sudo systemctl enable apache2.service
 $ sudo systemctl start apache2.service
 ```
 <img src="https://github.com/Petabytz/AWS-Projects/blob/master.d/Screenshot%20from%202019-07-13%2013-12-18.png">
-##### Open the port 80 and 443 and reload firewall so that the server can listen to remote client
+
+### Open the port 80 and 443 and reload firewall so that the server can listen to remote client
 ```bash
 $ sudo ufw allow 80
 $ sudo ufw allow 443
@@ -49,7 +50,7 @@ $ sudo reload
 |Service	| mariadb	|
 |Port			|	3306	|
 
-##### Enable and start mariadb service so that the service get started by default when the server reboots.
+#### Enable and start mariadb service so that the service get started by default when the server reboots.
 ```bash
 $ sudo systemctl enable mariadb.service
 $ sudo systemctl start mariadb.service
