@@ -35,7 +35,7 @@ $ sudo systemctl start apache2.service
 ```
 <img src="https://github.com/Petabytz/AWS-Projects/blob/master.d/Screenshot%20from%202019-07-13%2013-12-18.png">
 
-### Open the port 80 and 443 and reload firewall so that the server can listen to remote client
+#### Open the port 80 and 443 and reload firewall so that the server can listen to remote client
 ```bash
 $ sudo ufw allow 80
 $ sudo ufw allow 443
@@ -54,3 +54,25 @@ $ sudo reload
 ```bash
 $ sudo systemctl enable mariadb.service
 $ sudo systemctl start mariadb.service
+```
+### Install PHP 
+```bash
+$ sudo apt install php7.0 libapache2-mod-php7.0 php7.0-mysql
+```
+### Wordpress Installation 
+<p> Download the latest wordpress theme from wordpress. </p>
+
+```bash
+$ wget https://wordpress.org/latest.tar.gz
+```
+<p> Extract the archeive using :- </p>
+
+ ```bash
+$ tar -xvf <file_name>
+ 
+````
+<p> Now copy the content of teh wordpress folder to /var/www/html </p>
+
+```bash
+$ cp -r wordpress-<version>/* /var/www/html
+```
