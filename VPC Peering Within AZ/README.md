@@ -11,7 +11,7 @@ Amazon VPC is the networking layer for Amazon EC2. If you're new to Amazon EC2, 
 
 In this exercise, you'll create a VPC with IPv4 CIDR block, a subnet with an IPv4 CIDR block, and launch a public-facing instance into your subnet. Your instance will be able to communicate with the Internet, and you'll be able to access your instance from your local computer using SSH (if it's a Linux instance) or Remote Desktop (if it's a Windows instance).
 
-![](https://docs.aws.amazon.com/vpc/latest/userguide/images/getting-started-1-diagram.png)
+  ![](https://docs.aws.amazon.com/vpc/latest/userguide/images/getting-started-1-diagram.png)
 
 ## Step 1: Create the VPC
 
@@ -21,12 +21,14 @@ In this step, you'll use the Amazon VPC wizard in the Amazon VPC console to crea
 * Attaches an Internet gateway to the VPC. For more information about Internet gateways, see Internet Gateways. 
 * Creates a size /24 IPv4 subnet (a range of 256 private IP addresses) in the VPC. 
 * Creates a custom route table, and associates it with your subnet, so that traffic can flow between the subnet and the Internet    gateway. For more information about route tables, see Route Tables. 
+
 ## To create a VPC using the Amazon VPC Wizard
 * Open the Amazon VPC console at https://console.aws.amazon.com/vpc/home?region=us-east-1
 * In the navigation bar, on the top-right, take note of the region in which you'll be creating the VPC. Ensure that you continue   working in the same region for the rest of this exercise, as you cannot launch an instance into your VPC from a different region. For more information, see Regions and Availability Zones in the Amazon EC2 User Guide for Linux Instances. 
 * In the navigation pane, choose VPC dashboard. From the dashboard, choose Launch VPC Wizard. 
 
-![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-2.png)
+   ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-2.png)
+
 Choose the first option, VPC with a Single Public Subnet, and then choose Select.
 
 On the configuration page, enter a name for your VPC in the VPC name field; for example, my-vpc, and enter a name for your subnet in the Subnet name field. This helps you to identify the VPC and subnet in the Amazon VPC console after you've created them. For this exercise, you can leave the rest of the configuration settings on the page, and choose Create VPC.
@@ -47,52 +49,79 @@ On the configuration page, enter a name for your VPC in the VPC name field; for 
 
 * The Your VPCs page displays your default VPC and the VPC that you just created. The VPC that you created is a nondefault VPC, therefore the Default VPC column displays No. 
    ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-3.png)
- ## Create Subnet
+   
+
+## Create Subnet
  
 step 4) Now let’s create subnets in each of these VPC’s. In VPCA let’s create a subnet with a Name tag of SubnetA with a CIDR    block of 20.0.1.0/24
    
    ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-4.png)
    
 Step 5) Nowlet’s create a subnet in VPCB. In VPCA let’s create a subnet with a Name tag of SubnetB with a CIDR block of 10.0.1.0/24
+
    ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-5.png)
    
 Step 6) Now we are going to launch instances in both of the subnets. We want to ensure that both subnets get Public IP addresses, so enable them for the each subnet accordingly.
-    ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-6.png)
-    ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-7.png)
+
+   ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-6.png)
+   ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-7.png)
     
 Step7) Now let’s create a VPC Peering connection between both of the VPC’s
-     ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-8.png)
+
+   ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-8.png)
+   
 Step 8)In the next screen go ahead and click on Creating a new peering connection.
 For the peering connection, give a name tag for the connection. And then put the requester of the VPC as VPCA
-     ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-9.png)
+
+   ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-9.png)
+   
 Then choose the other VPC as the VPC to Peer with and then click on Create Peering connection.
 Create VPC Connection
-     ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-10.png)
+
+   ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-10.png)
+   
 Step 9) Now the VPC Peering connection you can see that the Status is Pending Acceptance
-      ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-11.png)
+
+   ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-11.png)
+   
 Choose the connection, click on Actions->Accept Request
-      ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-12.png)
+
+   ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-12.png)
+   
 And then accept the request
-       ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-13.png)
+
+   ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-13.png)
+   
 Once done, the connection will be in the Active State
 
 Step 10) Now we need to modify the route tables of both the VPC’s to ensure that communication can flow via the VPC Peering connection.
 
 So in the Route Table for VPC B, we need to add the destination for the CIDR of VPC A as the destination and the VPC Peering connection as the target.
-     ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering.png)
+
+   ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering.png)
+   
 We need to do the same thing for the Route table of VPC A
-     ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-15.png)
+
+  ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-15.png)
 If you want to connect to anyone of the instances in the VPC via the internet, ensure that the internet gateway is attached to the Route table as well.
-      ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-16.png)
+
+   ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-16.png)
       
  Step 11) Now it’s time to launch instances in each VPC.
-       ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-17.png)
+ 
+   ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-17.png)
+   
 Now we are going to connect to ServerA in VPCA and then ping ServerB. The private IP of ServerB is 10.0.1.138.
-       ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-18.png)
+
+   ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-18.png)
+   
 Since we are going to use the ping command , ensure that the Security Group for both instances have the security group modified to allow the ICMP protocol.
-       ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-19.png)
+
+   ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-19.png)
+   
 Once all of this is in place, you will be able to ping ServerB from ServerA.
-       ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-20.png)
+
+   ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-20.png)
 
 
 
