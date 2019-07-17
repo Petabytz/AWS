@@ -15,13 +15,8 @@ In this exercise, you'll create a VPC with IPv4 CIDR block, a subnet with an IPv
 
 In this step, you'll use the Amazon VPC wizard in the Amazon VPC console to create a VPC. The wizard performs the following steps for you:
 
-    Creates a VPC with a /16 IPv4 CIDR block (a network with 65,536 private IP addresses). For more information about CIDR notation and the sizing of a VPC, see Your VPC.
-
-    Attaches an Internet gateway to the VPC. For more information about Internet gateways, see Internet Gateways.
-
-    Creates a size /24 IPv4 subnet (a range of 256 private IP addresses) in the VPC.
-
-    Creates a custom route table, and associates it with your subnet, so that traffic can flow between the subnet and the Internet gateway. For more information about route tables, see Route Tables.
-    
-    
+* creates a VPC with a /16 IPv4 CIDR block (a network with 65,536 private IP addresses). For more information about CIDR notation and the sizing of a VPC, see Your VPC.
+* Attaches an Internet gateway to the VPC. For more information about Internet gateways, see Internet Gateways. 
+* Creates a size /24 IPv4 subnet (a range of 256 private IP addresses) in the VPC. 
+* Creates a custom route table, and associates it with your subnet, so that traffic can flow between the subnet and the Internet    gateway. For more information about route tables, see Route Tables. 
 
