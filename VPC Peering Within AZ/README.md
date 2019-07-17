@@ -21,5 +21,9 @@ In this step, you'll use the Amazon VPC wizard in the Amazon VPC console to crea
 * Attaches an Internet gateway to the VPC. For more information about Internet gateways, see Internet Gateways. 
 * Creates a size /24 IPv4 subnet (a range of 256 private IP addresses) in the VPC. 
 * Creates a custom route table, and associates it with your subnet, so that traffic can flow between the subnet and the Internet    gateway. For more information about route tables, see Route Tables. 
+## To create a VPC using the Amazon VPC Wizard
+* Open the Amazon VPC console at ![](https://console.aws.amazon.com/vpc/.)
+* In the navigation bar, on the top-right, take note of the region in which you'll be creating the VPC. Ensure that you continue   working in the same region for the rest of this exercise, as you cannot launch an instance into your VPC from a different region. For more information, see Regions and Availability Zones in the Amazon EC2 User Guide for Linux Instances. 
+* In the navigation pane, choose VPC dashboard. From the dashboard, choose Launch VPC Wizard. 
 
 ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-2.png)
