@@ -101,7 +101,7 @@ On the configuration page, enter a name for your VPC in the VPC name field; for 
    ![](https://www.whizlabs.com/wp-content/uploads/2017/12/VPC-Peering-3.png)
    
 
-## Step3 :Create Subnet
+# Step3 :Create Subnet
  
 ## step 4) Now let’s create subnets in each of these VPC’s. In VPCA let’s create a subnet with a Name tag of SubnetA with a CIDR    block of 20.0.1.0/24
    
