@@ -20,3 +20,4 @@ In this step, you'll use the Amazon VPC wizard in the Amazon VPC console to crea
 * Creates a size /24 IPv4 subnet (a range of 256 private IP addresses) in the VPC. 
 * Creates a custom route table, and associates it with your subnet, so that traffic can flow between the subnet and the Internet    gateway. For more information about route tables, see Route Tables. 
 
+![](https://docs.aws.amazon.com/vpc/latest/userguide/images/getting-started-1-diagram.png)
