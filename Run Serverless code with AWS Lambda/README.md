@@ -51,7 +51,7 @@ d.  Handler: You can specify a handler (a method/function in your code) where AW
 In this example, Lambda identifies this from the code sample and this should be pre-populated with lambda_function.lambda_handler.
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/5.gif)
 e.  Scroll down to configure your memory, timeout, and VPC settings.  For this tutorial, leave the default Lambda function configuration values.
-![](https://aws.amazon.com/getting-started/tutorials/run-serverless-code/)
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/6.gif)
 
 
 ## Step 4: Invoke Lambda Function and Verify Results
