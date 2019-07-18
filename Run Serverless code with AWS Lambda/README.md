@@ -42,7 +42,7 @@ Lambda Function Code:
  In this section, you can review the example code authored in Python.
 
 b.Go to the bottom of the page and select Create Function.
-![](https://aws.amazon.com/getting-started/tutorials/run-serverless-code/)
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/4.gif)
 
 c.  Runtime: Currently, you can author your Lambda function code in Java, Node.js, C#, Go or Python. For this tutorial, leave this on Python 2.7 as the runtime.
 
