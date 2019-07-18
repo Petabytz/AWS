@@ -67,7 +67,7 @@ b.  The editor pops up to enter an event to test your function.
 
 Select Create.
 
-![](https://aws.amazon.com/getting-started/tutorials/run-serverless-code/)
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/8.gif)
 
 c.  Select Test.
 ![](https://aws.amazon.com/getting-started/tutorials/run-serverless-code/)
