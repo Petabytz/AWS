@@ -58,7 +58,7 @@ e.  Scroll down to configure your memory, timeout, and VPC settings.  For this t
 The console shows the hello-world-python Lambda function - you can now test the function, verify results, and review the logs.
 
 a.  Select Configure Test Event from the drop-down menu called "Select a test event...".
-![](https://aws.amazon.com/getting-started/tutorials/run-serverless-code/)
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/7.gif)
 
 b.  The editor pops up to enter an event to test your function.  
 * Choose Hello World from the Sample event template list from the Input test event page. 
