@@ -97,7 +97,7 @@ The Monitoring tab will show six CloudWatch metrics: Invocation count, Invocatio
 
 With AWS Lambda, you pay for what you use. After you hit your AWS Lambda free tier limit, you are charged based on the number of requests for your functions (invocation count) and the time your code executes (invocation duration).  For more information, see AWS Lambda Pricing.
 
-![](https://aws.amazon.com/getting-started/tutorials/run-serverless-code/)
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/12.gif)
 
 ## Step 6: Delete the Lambda Function
 
