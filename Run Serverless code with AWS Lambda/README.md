@@ -25,7 +25,7 @@ The console shows this page only if you do not have any Lambda functions created
 b.  Select Blueprints.
 c.  In the Filter box, type in hello-world-python and select the hello-world-python blueprint.
 d.  Then click Configure.
-![](https://aws.amazon.com/getting-started/tutorials/run-serverless-code/)
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/3.gif)
 
 ## Step 3: Configure and Create Your Lambda Function
 
