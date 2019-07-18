@@ -89,7 +89,7 @@ a.Invoke the Lambda function a few more times by repeatedly clicking the Test bu
 
 b.Select Monitoring to view the results.
 
-![](https://aws.amazon.com/getting-started/tutorials/run-serverless-code/)
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/11.gif)
 
 c.Scroll down to view the metrics for your Lambda function.  Lambda metrics are reported through Amazon CloudWatch. You can leverage these metrics to set custom alarms. For more information about CloudWatch, see the Amazon CloudWatch Developer Guide.
 
