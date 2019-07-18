@@ -18,13 +18,15 @@ When you click here, the AWS Management Console will open in a new browser windo
 Blueprints provide example code to do some minimal processing. Most blueprints process events from specific event sources, such as Amazon S3, DynamoDB, or a custom application.
 a. In the AWS Lambda console, select # Create a Function.
 
-# Note:
+## Note:
 The console shows this page only if you do not have any Lambda functions created. If you have created functions already, you will see the Lambda > Functions page. On the list page, choose Create a function to go to the Create function page.
+
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Run Serverless code with AWS Lambda/2.gif)
 
 b.  Select Blueprints.
 c.  In the Filter box, type in hello-world-python and select the hello-world-python blueprint.
 d.  Then click Configure.
+
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/3.gif)
 
 ## Step 3: Configure and Create Your Lambda Function
@@ -42,6 +44,7 @@ Lambda Function Code:
  In this section, you can review the example code authored in Python.
 
 b.Go to the bottom of the page and select Create Function.
+
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/4.gif)
 
 c.  Runtime: Currently, you can author your Lambda function code in Java, Node.js, C#, Go or Python. For this tutorial, leave this on Python 2.7 as the runtime.
@@ -49,8 +52,11 @@ c.  Runtime: Currently, you can author your Lambda function code in Java, Node.j
 d.  Handler: You can specify a handler (a method/function in your code) where AWS Lambda can begin executing your code. AWS Lambda provides event data as input to this handler, which processes the event.
 
 In this example, Lambda identifies this from the code sample and this should be pre-populated with lambda_function.lambda_handler.
+
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/5.gif)
+
 e.  Scroll down to configure your memory, timeout, and VPC settings.  For this tutorial, leave the default Lambda function configuration values.
+
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/6.gif)
 
 
@@ -58,6 +64,7 @@ e.  Scroll down to configure your memory, timeout, and VPC settings.  For this t
 The console shows the hello-world-python Lambda function - you can now test the function, verify results, and review the logs.
 
 a.  Select Configure Test Event from the drop-down menu called "Select a test event...".
+
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/7.gif)
 
 b.  The editor pops up to enter an event to test your function.  
@@ -70,6 +77,7 @@ Select Create.
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/8.gif)
 
 c.  Select Test.
+
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/9.gif)
 
 d.  Upon successful execution, view the results in the console:
@@ -104,6 +112,7 @@ With AWS Lambda, you pay for what you use. After you hit your AWS Lambda free ti
 While you will not get charged for keeping your Lambda function, you can easily delete it from the AWS Lambda console.  
 
 a.Select the Actions button and click Delete Function.
+
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/13.gif)
 
 b.  You will be asked to confirm your termination - select Delete.
