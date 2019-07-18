@@ -10,7 +10,7 @@ We will then show you how to manually invoke the Lambda function using sample ev
 ## Step 1: Enter the Lambda Console
 
 When you click here, the AWS Management Console will open in a new browser window, so you can keep this step-by-step guide open.  Find Lambda under Compute and click to open the AWS Lambda Console.
-![](https://aws.amazon.com/getting-started/tutorials/run-serverless-code)
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/P1.8cbd1550e0c45cad8db027cf5e7ad1c4f457bc66.gif)
 
 ## Step 2: Select a Lambda Blueprint
 
