@@ -70,7 +70,7 @@ Select Create.
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/8.gif)
 
 c.  Select Test.
-![](https://aws.amazon.com/getting-started/tutorials/run-serverless-code/)
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/9.gif)
 
 d.  Upon successful execution, view the results in the console:
 
