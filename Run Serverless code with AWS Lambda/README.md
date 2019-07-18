@@ -104,10 +104,10 @@ With AWS Lambda, you pay for what you use. After you hit your AWS Lambda free ti
 While you will not get charged for keeping your Lambda function, you can easily delete it from the AWS Lambda console.  
 
 a.Select the Actions button and click Delete Function.
-![](https://aws.amazon.com/getting-started/tutorials/run-serverless-code/)
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/13.gif)
 
 b.  You will be asked to confirm your termination - select Delete.
 
-![](https://aws.amazon.com/getting-started/tutorials/run-serverless-code/)
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Run%20Serverless%20code%20with%20AWS%20Lambda/14.gif)
 
 
