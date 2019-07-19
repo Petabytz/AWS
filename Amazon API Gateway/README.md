@@ -22,3 +22,14 @@ API Gateway creates WebSocket APIs that:
    * Route incoming messages and based on message content.
 
 For more information about API Gateway WebSocket APIs, see Use API Gateway to Create WebSocket APIs and About WebSocket APIs in API Gateway. 
+
+## Build a Hello World API with Lambda Proxy Integration 
+
+Lambda proxy integration is a lightweight, flexible API Gateway API integration type that allows you to integrate an API method – or an entire API – with a Lambda function. The Lambda function can be written in any language that Lambda supports. Because it's a proxy integration, you can change the Lambda function implementation at any time without needing to redeploy your API.
+
+In this tutorial, you do the following:
+
+ * Create a "Hello, World!" Lambda function to be the backend for the API.
+
+  * Create and test a "Hello, World!" API with Lambda proxy integration.
+
