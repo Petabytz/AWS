@@ -79,7 +79,8 @@ In this tutorial, you do the following:
         f. Choose Create function.
 
    7. Under Function code, in the inline code editor, copy/paste the following code:
-   ```bash
+  
+ ```bash
    'use strict';
 console.log('Loading hello world function');
  
@@ -205,19 +206,19 @@ Build a "Hello, World!" API
 
 Deploy the API in the API Gateway console
 
-    Choose Deploy API from the Actions dropdown menu.
+   * Choose Deploy API from the Actions dropdown menu.
 
-    For Deployment stage, choose [new stage].
+   * For Deployment stage, choose [new stage].
 
-    For Stage name, enter test.
+   * For Stage name, enter test.
 
-    If desired, enter a Stage description.
+   * If desired, enter a Stage description.
 
-    If desired, enter a Deployment description.
+   * If desired, enter a Deployment description.
 
-    Choose Deploy.
+   * Choose Deploy.
 
-    Note the API's Invoke URL.
+   Note the API's Invoke URL.
 
 Use Browser and cURL to Test an API with Lambda Proxy Integration
 
@@ -230,6 +231,7 @@ For other methods, you must use more advanced REST API testing utilities, such a
 ## To test the deployed API using cURL:
   * Open a terminal window.
    * Copy the following cURL command and paste it into the terminal window, replacing r275xc9bmd with your API's API ID and us-east-1 with the region where your API is deployed. 
+   
 ```bash
 curl -v -X POST \
   'https://r275xc9bmd.execute-api.us-east-1.amazonaws.com/test/helloworld?name=John&city=Seattle' \
@@ -243,6 +245,7 @@ curl -v -X POST \
   curl -v -X POST "https://r275xc9bmd.execute-api.us-east-1.amazonaws.com/test/helloworld?name=John&city=Seattle" -H "content-type: application/json" -H "day: Thursday" -d "{ \"time\": \"evening\" }"
   ```
   You should get a successful response with a payload similar to the following: 
+  
   ``` bash
   {
   "message":"Good evening, John of Seattle. Happy Thursday!", 
@@ -309,13 +312,16 @@ curl -v -X POST \
   }
 }
 ```
+
 To test the GET method, copy the following cURL command and paste it into the terminal window, replacing r275xc9bmd with your API's API ID and us-east-1 with the region where your API is deployed. 
+
 ``` bash
 curl -X GET \
   'https://r275xc9bmd.execute-api.us-east-1.amazonaws.com/test/helloworld?Seattle?name=John' \
   -H 'content-type: application/json' \
   -H 'day: Thursday'
   ```  
+  
 You should get a response similar to the result from the preceding POST request, except that the GET request does not have any payload. So the body parameter will be null. 
 
 
