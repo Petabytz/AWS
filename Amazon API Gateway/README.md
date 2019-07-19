@@ -42,7 +42,8 @@ In this tutorial, you do the following:
    ### Create a "Hello, World!" Lambda Function
 
    This function returns a greeting to the caller as a JSON object in the following format:
- ```bash {
+ ```bash 
+ {
     "greeting": "Good {time}, {name} of {city}.[ Happy {day}!]"
    } ```
    
