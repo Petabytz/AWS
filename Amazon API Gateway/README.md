@@ -32,4 +32,22 @@ In this tutorial, you do the following:
  * Create a "Hello, World!" Lambda function to be the backend for the API.
 
   * Create and test a "Hello, World!" API with Lambda proxy integration.
+  
+## Topics
+
+   * Create a "Hello, World!" Lambda Function
+   * Create a "Hello, World!" API
+   * Deploy and Test the API
+   
+   ### Create a "Hello, World!" Lambda Function
+
+   This function returns a greeting to the caller as a JSON object in the following format:
+   {
+    "greeting": "Good {time}, {name} of {city}.[ Happy {day}!]"
+}
+   
+
+
+
+
 
