@@ -45,7 +45,8 @@ In this tutorial, you do the following:
  ```bash 
  {
     "greeting": "Good {time}, {name} of {city}.[ Happy {day}!]"
-   } ```
+   }
+   ```
    
 
 
