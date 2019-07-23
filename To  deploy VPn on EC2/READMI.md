@@ -20,6 +20,10 @@ The following are the key concepts for Site-to-Site VPN:
 
  * Customer gateway device: A physical device or software application on your side of the Site-to-Site VPN connection.
 
+
+![](https://github.com/Petabytz/AWS-Projects/blob/master/To%20%20deploy%20VPn%20on%20EC2/VPN_Basic_Diagram.png)
+
+
 Working with Site-to-Site VPN 
 
 You can create, access, and manage yourSite-to-Site VPN resources using any of the following interfaces:
