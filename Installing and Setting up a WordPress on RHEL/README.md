@@ -21,5 +21,7 @@ Once your instance is running, you can ssh into it. First, you need to identify 
 
 
 Use that address (and a path to your .pem file) to ssh into your instance:
-``` bash {Use that address (and a path to your .pem file) to ssh into your instance:}
+```bash 
+{ Use that address (and a path to your .pem file) to ssh into your instance: }
+
 ```
