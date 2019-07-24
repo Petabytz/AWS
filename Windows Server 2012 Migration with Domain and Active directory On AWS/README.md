@@ -41,19 +41,27 @@ Note: The server automatically reboots after the installation is complete.
 ## Convert Windows 2012 VM Image To .OVA Format(Import Image):-
 1.Go to File Tab
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Windows%20Server%202012%20Migration%20with%20Domain%20and%20Active%20directory%20On%20AWS/1_wgOxXRt3lztnTDPJsLkClA.png)
+
 2. In File Tab click the Export button
+
 3. Click Next button
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Windows%20Server%202012%20Migration%20with%20Domain%20and%20Active%20directory%20On%20AWS/1_WE5-Zx6JqDJzRzhZHkFldg.png)
+
 4. Select location for saving image
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Windows%20Server%202012%20Migration%20with%20Domain%20and%20Active%20directory%20On%20AWS/1_G76tIunxg9KRmZNR0235Fg.png)
+
 5. And Click the Export button
+
 6. Create an S3 bucket using AWS CLI
 aws s3 mb s3://<Bucket Name>
+
 7. Copy .OVA File Local Location to S3 Bucket using AWS CLI
 aws s3 cp <Location of.OVA file> s3://<Bucket Name>
+
 8. After Copy Create IAM Role for Migration
 Note:- creating roll with EC2 Full Accesses
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Windows%20Server%202012%20Migration%20with%20Domain%20and%20Active%20directory%20On%20AWS/1_63cOQQ8B04F_LBy1v0Wl4Q.png)
+
 9. Next click Trust relationships and Copy Json code.
 {
 “Version”: “2012–10–17”,
@@ -73,13 +81,17 @@ Note:- creating roll with EC2 Full Accesses
 }
 ]
 }
+
 10. and save Rolle
+
 11. Create image for EC2 using S3 use this command
 aws ec2 import-image — cli-input-json “{\”Description\”:\”<Image name>\”,\”DiskContainers\”:[{\”Description\”:\”<Image name>\”,\”UserBucket\”
 :{\”S3Bucket\”:\”<Bucket name>\”,\”S3Key\”:\”<Key name>\”}}]}”
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Windows%20Server%202012%20Migration%20with%20Domain%20and%20Active%20directory%20On%20AWS/1_GZLANFBtFu6AjVf6FTsLzQ.png)
+
 12. For check status of Image, conversion Used AWS CLI command
 aws — output json ec2 describe-import-image-tasks — import-task-ids import
 -ami-<ID>
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Windows%20Server%202012%20Migration%20with%20Domain%20and%20Active%20directory%20On%20AWS/1_yBEWFQCiBC4tekfXF5ecjA.png)
+
 13. After conversion, AMI go to S3 creation region and launched EC2 instance using the snapshot of AMI or used MY AMI Tab of LaunchInstanceWizard
