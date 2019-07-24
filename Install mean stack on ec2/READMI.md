@@ -98,6 +98,11 @@ Start the application.
 ./bin/www
 ~~~
 
+This will start the Express server for your application on port 3000.
+
+
+You can now proceed to enhance your project by connecting it with MongoDB or by adding AngularJS.
+
 Connecting to MongoDB
 
 You can connect your application with MongoDB using MongooseJS, an object modelling driver for Node.js. It is already installed in the MEAN stack so you only have to add the following lines to your app.js file:
@@ -107,7 +112,7 @@ You can connect your application with MongoDB using MongooseJS, an object modell
 var Mongoose = require('mongoose');
 var db = Mongoose.createConnection('mongodb://USER:PASSWORD@localhost/DATABASE');
 ~~~
-
+Note that the socket name depends on the MongoDB port in use.
 
 Adding AngularJS
 
