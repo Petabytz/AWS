@@ -62,7 +62,23 @@ APPLICATIONS OF MEAN STACK DEVELOPMENT:
    * Mean Stack application is very flexible to understand which helps the developers to customize it as per their needs.
    * Front-end development: in front-end developing the developers makes the website interactive by working on its appearances. Mean stack provides us with this feature.
    * Back-end development: in the back end development the developers make the website more functional by adding new features, making it more faster etc. this feature is also provided to us by the mean stack.
+   
+   
+ Create a new MEAN project
 
+If you would like to create a new MEAN project, follow the steps below:
+
+  * Log in to your server console.
+
+  * Create a new folder for your project.
+  
+  Replace the installdir placeholder with the full installation directory for your Bitnami stack.
+
+~~~bash
+mkdir installdir/projects
+~~~
+
+  
 
 
 
