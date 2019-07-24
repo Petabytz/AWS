@@ -77,7 +77,52 @@ If you would like to create a new MEAN project, follow the steps below:
 ~~~bash
 mkdir installdir/projects
 ~~~
+Create a new Express project:
+Replace the installdir placeholder with the full installation directory for your Bitnami stack.
 
+~~~bash
+cd installdir/projects
+express sample
+~~~
+
+The MEAN stack already has the required components installed in Node.js, but if you prefer, you can install them in the new project folder:
+Replace the installdir placeholder with the full installation directory for your Bitnami stack.
+
+~~~bash
+cd installdir/projects/sample
+npm install
+~~~
+Start the application.
+~~~bash
+
+./bin/www
+~~~
+
+Connecting to MongoDB
+
+You can connect your application with MongoDB using MongooseJS, an object modelling driver for Node.js. It is already installed in the MEAN stack so you only have to add the following lines to your app.js file:
+
+~~~bash
+
+var Mongoose = require('mongoose');
+var db = Mongoose.createConnection('mongodb://USER:PASSWORD@localhost/DATABASE');
+~~~
+
+
+Adding AngularJS
+
+You can use install AngularJS in your application with Bower. Create a file named .bowerrc in your application with the following content:
+
+~~~bash
+{ "directory" : "public/javascripts/vendor" }
+~~~
+Then, run this command in the project directory:
+
+~~~bash
+bower install angular
+~~~
+
+The necessary files will be copied into the public/javascripts/vendor/angular directory of your application.
   
 
 
