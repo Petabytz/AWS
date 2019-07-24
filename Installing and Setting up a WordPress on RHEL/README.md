@@ -22,7 +22,6 @@ Once your instance is running, you can ssh into it. First, you need to identify 
 
 Use that address (and a path to your .pem file) to ssh into your instance:
 ```bash 
-{ ssh -i ~/.ssh/demo.pem ec2-user@34.218.66.191
- }
-
+ ssh -i ~/.ssh/demo.pem ec2-user@34.218.66.191
+ 
 ```
