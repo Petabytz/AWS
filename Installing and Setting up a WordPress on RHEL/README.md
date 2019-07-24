@@ -69,7 +69,8 @@ Create your “blog” database:
 mysqladmin -uroot create blog
 ```
 Secure your database:
-```bash mysql_secure_Installation
+```bash 
+mysql_secure_Installation
 ```
 Answer the wizard questions as follows:
 
