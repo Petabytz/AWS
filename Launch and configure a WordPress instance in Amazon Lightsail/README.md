@@ -38,7 +38,7 @@ Moving along in this Amazon Lightsail Tutorial, let’s launch a WordPress confi
 
 ## Step 2: Click on the Create Instance button
 
-![]()
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Launch%20and%20configure%20a%20WordPress%20instance%20in%20Amazon%20Lightsail/click-create-1.png)
 
 ## Step 3: You can now select the required option, since we are launching a WordPress server, 
 we’ll select the WordPress option in the templates.
