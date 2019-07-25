@@ -62,10 +62,65 @@ you can choose the desired Availability Zone though.
 It will take some time for the machine to be up and running, once everything is done, on the main instance page, click on your instance, 
 and copy-paste the public IP of your instance in a new tab.
 
+Make note of the password displayed on the screen. You use it later to sign in to your WordPress dashboard.
+
+![]()
+
+Sign in to the administration dashboard for your WordPress website
+Now that you have the password for your WordPress dashboard, you can sign in. You can change your password, install plugins, change the theme of your website, and more. For more information, see Getting the application user name and password for your Powered by Bitnami' instance in Amazon Lightsail in the Lightsail documentation.
+
+In a browser window, go to:
+
+http://<public IP address>/wp-login.php
+Make sure to replace <public IP address> with the public IP for your WordPress instance.
+
+In the Username or Email Address box, enter user.
+
+In the Password box, enter the default password obtained earlier in this tutorial.
+
+Choose Log in.
+
+![]()
+
+You are now signed in to your WordPress dashboard where you can perform administrative actions on your website. For more information about administering your WordPress website, see the WordPress Codex in the WordPress documentation.
+
+
+
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Launch%20and%20configure%20a%20WordPress%20instance%20in%20Amazon%20Lightsail/click-instance-7.png)
 
 Once you visit this IP the following page will appear.
 
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Launch%20and%20configure%20a%20WordPress%20instance%20in%20Amazon%20Lightsail/click-instance8.png)
+
+
+Step 7: Create a Lightsail DNS zone and map a domain to your WordPress instance
+Transfer management of your domain's DNS records to Lightsail. This allows you to more easily map a domain to your WordPress instance, and manage all of your website’s resources using the Lightsail console. For more information, see Creating a DNS zone to manage your domain’s DNS records in Amazon Lightsail in the Lightsail documentation.
+
+* On the Networking tab of the Lightsail home page, choose Create DNS zone.
+![]()
+
+* Enter your domain, then choose Create DNS zone.
+![]()
+
+* Make note of the name server addresses listed on the page.
+
+You add these name server addresses to your domain name’s registrar to transfer management of your domain’s DNS records to Lightsail.
+
+![]()
+
+After management of your domain’s DNS records are transferred to Lightsail, add an A record to point the apex of your domain to your WordPress instance, as follows:
+
+* In the DNS zone for your domain, choose Add record.
+
+* In the Subdomain box, enter an @ symbol to map the apex of your domain (such as example.com) to your instance. The @ symbol explicitly symbolizes that you’re adding an apex record. It is not added as a subdomain.
+
+* In the Maps to box, choose the static IP that you attached to the WordPress instance in the previous step of this tutorial.
+
+* Choose the save icon.
+![]()
+
+Allow time for the change to propagate through the internet's DNS before your domain begins routing traffic to your WordPress instance.
+
+
 
 
