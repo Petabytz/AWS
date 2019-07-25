@@ -57,7 +57,7 @@ you can choose the desired Availability Zone though.
 
 ## Step 6: You can rename your instance to something more appropriate, and at last click on create.
 
-![]()
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Launch%20and%20configure%20a%20WordPress%20instance%20in%20Amazon%20Lightsail/lightsail-createnew6.png)
 
 It will take some time for the machine to be up and running, once everything is done, on the main instance page, click on your instance, 
 and copy-paste the public IP of your instance in a new tab.
