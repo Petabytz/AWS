@@ -84,7 +84,7 @@ Choose Log in.
 
 You are now signed in to your WordPress dashboard where you can perform administrative actions on your website. For more information about administering your WordPress website, see the WordPress Codex in the WordPress documentation.
 
-
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Launch%20and%20configure%20a%20WordPress%20instance%20in%20Amazon%20Lightsail/amazon-wordpress-tutorial-dashboard.png)
 
 ![](https://github.com/Petabytz/AWS-Projects/blob/master/Launch%20and%20configure%20a%20WordPress%20instance%20in%20Amazon%20Lightsail/click-instance-7.png)
 
