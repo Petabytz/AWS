@@ -97,16 +97,16 @@ Step 7: Create a Lightsail DNS zone and map a domain to your WordPress instance
 Transfer management of your domain's DNS records to Lightsail. This allows you to more easily map a domain to your WordPress instance, and manage all of your website’s resources using the Lightsail console. For more information, see Creating a DNS zone to manage your domain’s DNS records in Amazon Lightsail in the Lightsail documentation.
 
 * On the Networking tab of the Lightsail home page, choose Create DNS zone.
-![]()
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Launch%20and%20configure%20a%20WordPress%20instance%20in%20Amazon%20Lightsail/amazon-wordpress-tutorial-11.png)
 
 * Enter your domain, then choose Create DNS zone.
-![]()
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Launch%20and%20configure%20a%20WordPress%20instance%20in%20Amazon%20Lightsail/amazon-wordpress-tutorial-12.png)
 
 * Make note of the name server addresses listed on the page.
 
 You add these name server addresses to your domain name’s registrar to transfer management of your domain’s DNS records to Lightsail.
 
-![]()
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Launch%20and%20configure%20a%20WordPress%20instance%20in%20Amazon%20Lightsail/amazon-wordpress-tutorial-13.png)
 
 After management of your domain’s DNS records are transferred to Lightsail, add an A record to point the apex of your domain to your WordPress instance, as follows:
 
@@ -117,7 +117,7 @@ After management of your domain’s DNS records are transferred to Lightsail, ad
 * In the Maps to box, choose the static IP that you attached to the WordPress instance in the previous step of this tutorial.
 
 * Choose the save icon.
-![]()
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Launch%20and%20configure%20a%20WordPress%20instance%20in%20Amazon%20Lightsail/amazon-wordpress-tutorial-14.png)
 
 Allow time for the change to propagate through the internet's DNS before your domain begins routing traffic to your WordPress instance.
 
