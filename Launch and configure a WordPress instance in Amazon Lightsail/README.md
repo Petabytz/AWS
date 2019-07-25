@@ -64,7 +64,7 @@ and copy-paste the public IP of your instance in a new tab.
 
 Make note of the password displayed on the screen. You use it later to sign in to your WordPress dashboard.
 
-![]()
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Launch%20and%20configure%20a%20WordPress%20instance%20in%20Amazon%20Lightsail/amazon-wordpress-tutorial-password.png)
 
 Sign in to the administration dashboard for your WordPress website
 Now that you have the password for your WordPress dashboard, you can sign in. You can change your password, install plugins, change the theme of your website, and more. For more information, see Getting the application user name and password for your Powered by Bitnami' instance in Amazon Lightsail in the Lightsail documentation.
