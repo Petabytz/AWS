@@ -80,7 +80,7 @@ In the Password box, enter the default password obtained earlier in this tutoria
 
 Choose Log in.
 
-![]()
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Launch%20and%20configure%20a%20WordPress%20instance%20in%20Amazon%20Lightsail/amazon-wordpress-tutorial-login.png)
 
 You are now signed in to your WordPress dashboard where you can perform administrative actions on your website. For more information about administering your WordPress website, see the WordPress Codex in the WordPress documentation.
 
