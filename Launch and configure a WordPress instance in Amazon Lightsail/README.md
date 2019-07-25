@@ -34,7 +34,7 @@ Moving along in this Amazon Lightsail Tutorial, let’s launch a WordPress confi
 
 ## Step 1: Login to your AWS Management Console and select Amazon Lightsail.
 
-![]()
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Launch%20and%20configure%20a%20WordPress%20instance%20in%20Amazon%20Lightsail/lightsail-select-1.png)
 
 ## Step 2: Click on the Create Instance button
 
