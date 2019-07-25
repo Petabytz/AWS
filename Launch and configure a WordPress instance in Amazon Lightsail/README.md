@@ -53,7 +53,7 @@ we will be selecting the free tier configuration.
 ## Step 5: By default, N. Virginia region, will be selected for you since Amazon Lightsail is only available in that region, 
 you can choose the desired Availability Zone though.
 
-![]()
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Launch%20and%20configure%20a%20WordPress%20instance%20in%20Amazon%20Lightsail/select-zone-5.png)
 
 ## Step 6: You can rename your instance to something more appropriate, and at last click on create.
 
