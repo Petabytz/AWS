@@ -66,4 +66,6 @@ and copy-paste the public IP of your instance in a new tab.
 
 Once you visit this IP the following page will appear.
 
+![](https://github.com/Petabytz/AWS-Projects/blob/master/Launch%20and%20configure%20a%20WordPress%20instance%20in%20Amazon%20Lightsail/click-instance8.png)
+
 
